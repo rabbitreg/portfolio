@@ -1,87 +1,57 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
+  <v-container fluid color class="pa-0">
+    <v-container fluid class="backgroundSub">
+      <v-row justify="center">
+        <v-col cols="12" md="8" lg="6" xl="5">
+          <v-card elevation="2" outlined>
+            <v-card-title
+              ><h3>HELLOWORLD</h3>
+              <v-img></v-img>
+            </v-card-title>
+            <v-card-text><p>HELLOWORLD</p></v-card-text>
+          </v-card>
+          <v-card elevation="2" outlined>
+            <v-card-title><h3>HELLOWORLD</h3></v-card-title>
+            <v-card-text><p>HELLOWORLD</p></v-card-text>
+          </v-card>
+          <v-card elevation="2" outlined>
+            <v-card-title><h3>HELLOWORLD</h3></v-card-title>
+            <v-card-text><p>HELLOWORLD</p></v-card-text>
+          </v-card>
+          <template>
+            <div class="text-center">
+              <v-pagination v-model="page" :length="3"> </v-pagination>
+            </div>
+          </template>
+        </v-col>
+
+        <v-col cols="12" md="3" lg="2" xl="2">
+          <h3>SEARCH...</h3>
+          <v-text-field label="TITLE" type="text">
+            <template v-slot:append-outer>
+              <v-btn color="#FFE0B3">search</v-btn>
+            </template>
+          </v-text-field>
+          <h3>TAG</h3>
+          <v-chip>{{ tag }}</v-chip>
+          <h3>CATEGORIES</h3>
+          <v-list-item active-class="default"></v-list-item>
+          <h3>ABOUT ME</h3>
+          <v-banner icon="images">MICHITSUJI</v-banner>
           <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
+            初めまして道草の管理人のしているものです。このサイトに立ち寄っていただきありがとうございます。
+            lomosaitodeha
           </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation </a
-            >.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br />
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-container>
 </template>
 
-<script>
-export default {
-  name: 'IndexPage',
+<script></script>
+
+<style>
+.backgroundSub {
+  background-color: #6d4c41;
 }
-</script>
+</style>
