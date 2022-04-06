@@ -1,16 +1,6 @@
 <template>
   <v-app dark>
-    <!--ヘッダー-->
-    <v-app-bar :clipped-right="clipped" id="appbar" fixed app>
-      <v-toolbar-title>
-        <nuxt-link to="/" class="header-title-link">
-          <h3 class="header-text">{{ title }}</h3>
-        </nuxt-link>
-      </v-toolbar-title>
-
-      <v-spacer />
-    </v-app-bar>
-    <v-main class="backgroundSub">
+    <v-main>
       <Nuxt />
     </v-main>
 
@@ -48,7 +38,6 @@ export default {
   },
 }
 </script>
-
 <style>
 #appbar {
   background-color: #dfcba5;
