@@ -1,5 +1,13 @@
 <template>
   <v-app dark>
+    <v-app-bar :clipped-right="clipped" id="appbar" dense fixed flat app>
+      <v-toolbar-title>
+        <nuxt-link to="/" class="header-title-link">
+          <h3>{{ title }}</h3>
+        </nuxt-link>
+        <v-spacer />
+      </v-toolbar-title>
+    </v-app-bar>
     <v-main>
       <Nuxt />
     </v-main>
@@ -40,10 +48,10 @@ export default {
 </script>
 <style>
 #appbar {
-  background-color: #dfcba5;
+  background-color: #fafafa;
 }
 #footer {
-  background-color: #dfcba5;
+  background-color: #fafafa;
 }
 #footer span {
   margin: auto;
@@ -53,5 +61,8 @@ export default {
 }
 .header-title-link {
   text-decoration: none;
+}
+.v-application a.header-title-link {
+  color: #000;
 }
 </style>
