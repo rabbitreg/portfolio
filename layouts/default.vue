@@ -52,6 +52,7 @@ export default {
 }
 #footer {
   background-color: #fafafa;
+  margin-top: auto;
 }
 #footer span {
   margin: auto;
