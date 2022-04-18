@@ -1,7 +1,7 @@
 ---
 title: 平井堅
-images: src="/images/images1.jpg
-subtitle:
+images: /images/images4.jpg
+subtitle: おすすめ曲
 date: 2022/4/8
 ---
 

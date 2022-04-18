@@ -5,8 +5,8 @@
         <nuxt-link to="/" class="header-title-link">
           <h3>{{ title }}</h3>
         </nuxt-link>
-        <v-spacer />
       </v-toolbar-title>
+      <v-spacer></v-spacer>
     </v-app-bar>
     <v-main>
       <Nuxt />
