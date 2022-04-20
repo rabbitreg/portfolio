@@ -20,15 +20,6 @@
 
               <p>{{ article.date }}</p>
             </nuxt-link>
-            <v-chip
-              small
-              class="ma-2 mt-0"
-              v-if="selectTag"
-              close
-              @click:close="resetTag()"
-            >
-              {{ selectTag }}
-            </v-chip>
           </v-card>
         </v-row>
       </v-card>
