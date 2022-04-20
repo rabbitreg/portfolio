@@ -5,7 +5,7 @@ subtitle: おすすめ曲
 images: /images/images1.jpg
 ---
 
-# カラオケ
+# おすすめ曲
 
 - 1.夜に駆ける
 - 2.群青
